@@ -1,0 +1,92 @@
+/* スマホ向けレイアウト */
+@media screen and (max-width: 1000px) {
+
+    body{
+        position: relative;
+        z-index: 1;
+        width: 90%;
+        grid-template:
+        "header" 50px
+        "main  " 1fr
+        "left  " 1fr
+        "right " 1fr
+        "footer" 300px;
+    }
+
+    html{
+        position: relative;
+    }
+
+    html::after {
+    content: '';
+    background: linear-gradient(transparent, rgba(255,255,255,.6), #fff ) fixed;
+    /* background-color: rgba(255,255,255,.5); */
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+    .header{
+        background-color: transparent;
+    }
+
+    .main{
+        background-color: transparent;
+    }
+
+    .main-logo p{
+        font-size: 15.0rem;
+    }
+    
+    .main-sentence p{
+        font-size: 4.0rem;
+    }
+        
+    .nav{
+        background-color: transparent;
+    }
+
+    #hover{
+        font-size: 1.8rem;
+        color: rgba(0,0,0,0.8);
+        transition: 0.6s;
+    }
+    
+    #hover:hover{
+        color: rgba(255, 255, 255, 0.3);
+        /* border-bottom:  1px solid rgba(255,255,255,0.2); */
+    }
+
+    .aside{
+        background-color: transparent;
+        position: relative;
+    }
+
+    .message{
+        display: block;
+        position: absolute;
+        top:25%;
+        z-index: 1;
+        font-family: 'Noto Sans JP', sans-serif;
+    }
+
+    .top-text{
+        font-weight: bold;
+        font-size: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    .next-text{
+        font-size: 1.5rem;
+        line-height:3rem;
+        padding-bottom: 1rem;
+    }
+
+    
+    .footer{
+        background-color: transparent;
+    }
+
+}
