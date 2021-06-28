@@ -13,10 +13,10 @@ body{
         "left   main   right " 1fr
         "footer footer footer" 200px
         /300px  1fr    1fr ;
-    background-image: url(../images/pf-roofroom.jpg);
-    background-size: cover;
-    background-position: center;
-    font-family: 'Raleway', sans-serif;}
+        background-image: url("https://github.com/msan-0916/practice_0628/blob/main/pf-roofroom.jpg?raw=true");
+        background-size: cover;
+        background-position: center;
+        font-family: 'Raleway', sans-serif;}
 
 
 .header{
@@ -260,5 +260,4 @@ body{
     top: 70%;
     padding-right: 30px;
 }
-
 
